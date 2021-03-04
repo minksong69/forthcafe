@@ -22,7 +22,7 @@
 
 # Event Storming 결과
 
-![EventStormingV1](https://github.com/minksong69/forthcafe/blob/main/images/eventingstorming_minksong69_forthcafe.png)
+![EventStormingV1](https://github.com/minksong69/forthcafe/blob/main/images/eventingstorming_%ED%8C%80%20%EA%B3%BC%EC%A0%9C_forthcafe.png)
 
 # 헥사고날 아키텍처 다이어그램 도출
 ![증빙10](https://github.com/minksong69/forthcafe/blob/main/images/%ED%97%A5%EC%82%AC%EA%B3%A0%EB%82%A0%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98_%ED%8C%80%20%EA%B3%BC%EC%A0%9C.png)
