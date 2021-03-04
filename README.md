@@ -28,7 +28,7 @@
 ![증빙10](https://github.com/minksong69/forthcafe/blob/main/images/%ED%97%A5%EC%82%AC%EA%B3%A0%EB%82%A0%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98_minksong69.png)
 
 # 구현
-분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 구현한 각 서비스를 로컬에서 실행하는 방법은 아래와 같다 (각각의 포트넘버는 8081 ~ 8084, 8088 이다)
+분석/설계 단계에서 도출된 헥사고날 아키텍처에 따라, 구현한 각 서비스를 로컬에서 실행하는 방법은 아래와 같다 (각각의 포트넘버는 8081 ~ 8085, 8088 이다)
 ```
 cd Order
 mvn spring-boot:run  
@@ -41,6 +41,9 @@ mvn spring-boot:run
 
 cd MyPage
 mvn spring-boot:run  
+
+cd Inventory
+mvn spring-boot:run
 
 cd gateway
 mvn spring-boot:run 
