@@ -15,12 +15,15 @@
 ### 비기능적 요구사항
 1. 트랜젝션
    1. 결재가 취소되면 배달이 진행되지 않는다 → Sync 호출
-   2. 결재가 취소되면 재고가 입고되지 않는다 → Sync 호출
+   1. 결재가 취소되면 재고가 입고되지 않는다 → Sync 호출
 2. 장애격리
-   1. 배송에서 장애가 발송해도 결재와 주문은 24시간 받을 수 있어야 한다 →Async(event-driven), Eventual Consistency
+   1. 배송에서 장애가 발생해도 결재와 주문은 24시간 받을 수 있어야 한다 → Async(event-driven), Eventual Consistency
+   1. 배달에서 장애가 발생해도 재고는 정상적으로 입고될 수 있어야 한다 → Async(event-driven), Eventual Consistency
    1. 결재가 과중되면 결재를 잠시 후에 하도록 유도한다 → Circuit breaker, fallback
+   1. 입고가 과중되면 입고를 잠시 후에 하도록 유도한다 → Circuit breaker, fallback
 3. 성능
    1. 고객이 주문상태를 주문내역조회에서 확인할 수 있어야 한다 → CQRS
+   1. 점원이 재고상태를 재고내역조회에서 확인할 수 있어야 한다 → CQRS
 
 # Event Storming 결과
 
